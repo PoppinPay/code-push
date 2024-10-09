@@ -1,0 +1,29 @@
+{
+  "name": "@poppinpay/code-push.types",
+  "version": "0.0.9",
+  "description": "Types for the CodePush service",
+  "main": "./dist/index.js",
+  "typings": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rimraf dist/",
+    "prebuild": "npm run clean",
+    "build": "tsc --outDir dist/",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "dependencies": {
+
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.21.5",
+    "@babel/preset-env": "^7.22.4",
+    "@babel/preset-typescript": "^7.21.5",
+    "@types/jest": "^29.5.1",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "rimraf": "^4.3.1",
+    "ts-jest": "^29.1.0",
+    "typescript": "^4.9.5"
+  }
+}
